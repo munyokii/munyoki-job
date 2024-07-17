@@ -2,7 +2,6 @@ async-timeout==4.0.1
 attrs==23.2.0
 beautifulsoup4==4.10.0
 blinker==1.7.0
-Brlapi==0.8.3
 Brotli==1.0.9
 certifi==2020.6.20
 chardet==4.0.0
