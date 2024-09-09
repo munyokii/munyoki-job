@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -262,16 +262,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .projects{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.projects .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.projects .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -382,11 +382,11 @@ section .title::after{
     width: 20%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* projects section styling */
+.projects .title::after{
+    content: "what have done";
 }
-.teams .carousel .card{
+/* .projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -394,25 +394,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.projects .carousel .card:hover{
     background: rgb(20, 157, 220);
 }
-.teams .carousel .card .box{
+.projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.projects .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -420,9 +420,9 @@ section .title::after{
     border: 5px solid rgb(20, 157, 220);
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.projects .carousel .card:hover img{
     border-color: #fff;
-}
+} */
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -555,6 +555,75 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* my projects section */
+.projects {
+    padding: 4rem 1rem;
+}
+.max-widths {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(250, 250, 250, 0.1), 0 2px 4px -1px rgba(254, 254, 254, 0.06);
+}
+.project-slide {
+    display: none;
+}
+.project-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.project-info {
+    padding: 1.5rem;
+    background-color: rgb(8, 8, 8);
+}
+.project-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.project-info p {
+    color: #fefeff;
+    margin-bottom: 1rem;
+}
+.project-info a {
+    color: rgb(20, 157, 220);
+    text-decoration: none;
+}
+.project-info a:hover {
+    text-decoration: underline;
+}
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.prev {
+    left: 1rem;
+}
+.next {
+    right: 1rem;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
