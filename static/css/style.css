@@ -614,6 +614,7 @@ footer span a:hover{
     padding: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 10;
 }
 .nav-button:hover {
     background-color: rgba(255, 255, 255, 1);
@@ -623,6 +624,15 @@ footer span a:hover{
 }
 .next {
     right: 1rem;
+}
+.slideshow-container:hover .nav-button {
+    display: block;
+}
+.nav-button {
+    display: none;
+}
+.slideshow-container:hover .nav-button {
+    display: block;
 }
 
 /* responsive media query start */
