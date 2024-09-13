@@ -71,3 +71,68 @@ $(document).ready(function(){
         }
     });
 });
+
+const projectsData = [
+    {
+        id: 1,
+        title: "Crime Reporting System",
+        description: "A web-based system for reporting and tracking criminal activities.",
+        imageUrl: "/static/images/crime.png",
+        projectLink: "https://crimereportsystem.onrender.com/"
+    },
+    {
+        id: 2,
+        title: "DigiCraft Website",
+        description: "A dynamic website for DigiCraft Company",
+        imageUrl: "/static/images/DigiCraft.png",
+        projectLink: "#projects"
+    },
+];
+
+let currentIndex = 0;
+
+function createProjectSlide(project) {
+    return `
+        <div class="project-slide">
+            <img src="${project.imageUrl}" alt="${project.title}">
+            <div class="project-info">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <a href="${project.projectLink}" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+        </div>
+    `;
+}
+
+function renderProjects() {
+    const container = document.getElementById('slideshow-container');
+    container.innerHTML = projectsData.map(createProjectSlide).join('') +
+        '<button class="nav-button prev" onclick="changeSlide(-1)">&#10094;</button>' +
+        '<button class="nav-button next" onclick="changeSlide(1)">&#10095;</button>';
+    showSlide(currentIndex);
+}
+
+function showSlide(index) {
+    const slides = document.getElementsByClassName('project-slide');
+    if (index >= slides.length) currentIndex = 0;
+    if (index < 0) currentIndex = slides.length - 1;
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[currentIndex].style.display = 'block';
+}
+
+function changeSlide(n) {
+    showSlide(currentIndex += n);
+}
+
+function autoSlide() {
+    changeSlide(1);
+    setTimeout(autoSlide, 5000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProjects();
+    autoSlide();
+});
