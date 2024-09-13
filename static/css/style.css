@@ -673,6 +673,41 @@ footer {
 .fa-instagram:hover { color: #E4405F; }
 .fa-x-twitter:hover { color: #1DA1F2; }
 
+/* icons */
+.icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icons .row i {
+    font-size: 25px;
+    color: #4070f4;
+    margin-right: 20px;
+}
+
+.icons .info {
+    text-align: left;
+}
+
+.icons .info .head {
+    font-weight: 500;
+}
+
+.icons .info .sub-title {
+    color: #333;
+}
+
+.icons .info .sub-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icons .info .sub-title a:hover {
+    color: #4070f4;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
