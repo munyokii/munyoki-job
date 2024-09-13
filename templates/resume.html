@@ -7,9 +7,47 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.w3-blue {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px;
+        margin: 15px 0;
+    }
+
+    .social-icons a {
+        color: #ffffff;
+        font-size: 24px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .social-icons a:hover {
+        background-color: white;
+        color: #2196F3;
+    }
+
 </style>
 </head>
 <body class="w3-light-grey">
@@ -119,11 +157,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <footer class="w3-container w3-blue w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-github w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <div class="footer-content">
+      <p>Find me on social media.</p>
+      <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/MuliJob" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/job-muli-b28599316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+          </a>
+      </div>
+  </div>
 </footer>
 
 </body>

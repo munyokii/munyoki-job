@@ -635,6 +635,44 @@ footer span a:hover{
     display: block;
 }
 
+/* footer styling */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Specific colors for each icon on hover */
+.fa-linkedin:hover { color: #0077B5; }
+.fa-github:hover { color: #6cc644; }
+.fa-facebook:hover { color: #1877F2; }
+.fa-instagram:hover { color: #E4405F; }
+.fa-x-twitter:hover { color: #1DA1F2; }
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{

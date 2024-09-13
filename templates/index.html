@@ -120,7 +120,6 @@
                     <div class="text">My creative skills & experiences.</div>
                     <p>Welcome to my creative world! With a passion for innovation and a wealth of experience in web development, cybersecurity, and app development, 
                         I bring ideas to life. Explore my work on GitHub below.</p>
-                    <a href="https://github.com/MuliJob">GitHub</a>
                     <a href="{{ url_for('resume') }}">Resume</a>
                 </div>
                 <div class="column right">
@@ -249,11 +248,27 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By Muli, Munyoki Job</a></span>
+        <div class="footer-content">
+            <span>Created By Muli, Munyoki Job</span>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/job-muli-b28599316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/MuliJob" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
     </footer>
-    <script>
-        
-    </script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 </html>
