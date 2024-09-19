@@ -84,8 +84,8 @@ const projectsData = [
         id: 2,
         title: "DigiCraft Website",
         description: "A dynamic website for DigiCraft Company",
-        imageUrl: "/static/images/DigiCraft.png",
-        projectLink: "#projects"
+        imageUrl: "/static/images/Digicraft.png",
+        projectLink: "https://digicraft-wx1n.onrender.com/"
     },
 ];
 
