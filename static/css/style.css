@@ -838,3 +838,29 @@ footer {
         line-height: 38px;
     }
 }
+
+@media (max-width: 768px) {
+  .contact .right form .button-area {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .right form .button-area button {
+    width: 100% !important;
+  }
+}
+
+.resume-link a {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .resume-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .resume-link a {
+    width: 100%;
+  }
+}
