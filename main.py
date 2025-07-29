@@ -3,13 +3,15 @@ from flask import Flask, render_template
 app = Flask('Personal Portfolio')
 
 @app.route('/')
-@app.route('/munyoki-job')
+@app.route('/munyoki-job-resume')
 def index():
-  return render_template('index.html')
+    """File to render the home page."""
+    return render_template('index.html')
 
 @app.route('/resume')
 def resume():
-  return render_template('resume.html')
+    """File to render the resume page."""
+    return render_template('resume.html')
 
 if __name__ == '__main__':
-  app.run()
+    app.run()

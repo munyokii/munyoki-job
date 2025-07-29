@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Full-Stack Web Developer"],
+        strings: ["Software Engineer", "Full-Stack Developer", "Freelance Developer", "Cybersecurity Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Software Engineer", "Full-Stack Web Developer"],
+        strings: ["Software Engineer", "Full-Stack Developer", "Freelance Developer", "Cybersecurity Enthusiast"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -77,15 +77,15 @@ const projectsData = [
         id: 1,
         title: "Crime Reporting System",
         description: "A web-based system for reporting and tracking criminal activities.",
-        imageUrl: "/static/images/crime.png",
+        imageUrl: "/static/images/crime.webp",
         projectLink: "https://crimereportsystem.onrender.com/"
     },
     {
         id: 2,
         title: "DigiCraft Website",
-        description: "DigiCraft company website",
-        imageUrl: "/static/images/Digicraft.png",
-        projectLink: "https://digicraft-wx1n.onrender.com/"
+        description: "DigiCraft Software Company Website",
+        imageUrl: "/static/images/digicraft.webp",
+        projectLink: "https://digicrafts.co.ke/"
     },
 ];
 
