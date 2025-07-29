@@ -166,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url('/static/images/banner.jpg') no-repeat center;
+    background: url('/static/images/me.webp') no-repeat center;
     height: 90vh;
     color: #fff;
     min-height: 500px;
@@ -511,7 +511,11 @@ section .title::after{
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
+    border-color: rgb(20, 157, 220);
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    box-shadow: 0 0 8px rgba(20, 157, 220, 0.4);
 }
 .contact .right form .textarea textarea{
   padding-top: 10px;
