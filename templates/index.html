@@ -233,21 +233,22 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="{{ url_for('resume') }}" method="POST, GET">
+                    <form action="" method="POST, GET">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" name="name" required>
+                                <input type="text" placeholder="Name" name="name">
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" name="email" required>
+                                <input type="email" placeholder="Email" name="email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" name="topic" required>
+                            <input type="text" placeholder="Subject" name="topic">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="40" rows="20" placeholder="Message.." name="message" required></textarea>
+                            <textarea cols="40" rows="20" placeholder="Message.." name="message"></textarea>
                         </div>
+                        <div id="form-message" style="display:none; padding:10px; margin:10px 0; border-radius:5px;"></div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
                         </div>
@@ -280,6 +281,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('XdK0Mq-1-D6u2ZBO2');
+    </script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <script src="{{url_for('static', filename='js/sendmessage.js')}}"></script>
 </body>
 </html>
