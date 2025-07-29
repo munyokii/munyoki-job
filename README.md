@@ -31,23 +31,47 @@ It is a fully responsive, static website designed to provide a smooth and engagi
    ```bash
    cd munyoki-job
    ```
-3. Open the `index.html` file in your browser to view the website.
+3. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   ```
+5. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+6. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+7. Run the main.py file to start the server:
+   ```bash
+   python main.py
+   ```
+4. Open the url in your web browser:
+   ```
+   http://localhost:5000 or http://127.0.0.1:5000
+   ```
 
 ## 🎨 Customization
 
 Want to make this portfolio your own? Here’s how:
 
-1. Update Content
+1.Update Content
 
-Edit index.html to change text, links, and sections.
+  - Edit index.html to change text, links, and sections.
 
-Modify static/css/style.css to adjust colors, fonts, and layout.
+  - Modify static/css/style.css to adjust colors, fonts, and layout.
 
-2. Add Your Projects
+2.Add Your Projects
 
-Update the projects section in index.html or dynamically load them via static/js/main.js.
+  - Update the projects section in index.html or dynamically load them via static/js/main.js.
 
 
-3. Enable Contact Form
+3.Enable Contact Form
 
-Use FormSubmit (simple) or Netlify Forms (no backend needed).
+  - Since email-js is used for form submissions, you need to sign up for an account and obtain your API keys.
